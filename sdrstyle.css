@@ -1,0 +1,131 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #001f3f;
+    margin-top: 0;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#players p {
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#players p:last-child {
+    border-bottom: none;
+}
+
+#players p span {
+    color: #888;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #001f3f;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+footer:hover {
+    transform: translateY(-5px);
+}
+
